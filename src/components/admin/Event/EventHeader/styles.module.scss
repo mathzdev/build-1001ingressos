@@ -1,0 +1,126 @@
+.header {
+    background-color: #fff;
+    padding: 1.5rem 1.5rem 0rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .headerTop {
+        background-color: #fff;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+
+        h1 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: #494b57;
+            max-inline-size: initial;
+        }
+
+        .titleContainer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .dot {
+                display: block;
+                width: 10px;
+                aspect-ratio: 1 / 1;
+                background-color: #ff3549;
+                border-radius: var(--radius-round);
+
+                &[data-active='true'] {
+                    background-color: #2cc8bd;
+                }
+            }
+        }
+    }
+
+    .eventInfo {
+        background-color: #fff;
+
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        & > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.2rem;
+
+            p {
+                color: #85868f;
+                font-size: 0.75rem;
+                min-width: fit-content;
+            }
+        }
+    }
+
+    nav {
+        background-color: #fff;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            gap: 8px;
+            list-style: none;
+
+            li a {
+                display: block;
+                font-size: 0.75rem;
+                font-weight: 600;
+                color: #85868f;
+                padding: 1rem 0.7rem;
+                position: relative;
+                transition: color 0.2s;
+                text-transform: uppercase;
+
+                &::after,
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    width: 0;
+                    height: 3px;
+                    background-color: #8000ff;
+                    transition: width 0.2s;
+                }
+                &::before {
+                    left: 50%;
+                    border-radius: 0 var(--radius-round) var(--radius-round) 0;
+                }
+                &::after {
+                    right: 50%;
+                    border-radius: var(--radius-round) 0 0 var(--radius-round);
+                }
+
+                &:hover,
+                &:focus,
+                &:active,
+                &:focus-within,
+                &[data-active='true'] {
+                    font-weight: 600;
+                    color: #8000ff;
+
+                    &::after,
+                    &::before {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .buttonsContainer {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}

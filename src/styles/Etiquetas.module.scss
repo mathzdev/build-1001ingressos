@@ -1,0 +1,361 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .headerArea {
+    }
+
+    .contentArea {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+        .sidebar {
+        }
+
+        .allContent {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .safeArea {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            justify-content: space-between;
+
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 1rem;
+
+            margin-left: 4.3rem;
+        }
+
+        .Head {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            justify-content: space-between;
+        }
+
+        .leftHead {
+            display: flex;
+            flex-direction: row;
+
+            gap: 1rem;
+
+            align-items: center;
+        }
+
+        .rightHead {
+            display: flex;
+            flex-direction: row;
+
+            gap: 0.6rem;
+        }
+
+        .greenCircle {
+            height: 10px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #494b57;
+        }
+
+        .headButton {
+            color: #8000ff;
+            font-size: 10px;
+            font-weight: 600;
+
+            background-color: #fff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+
+        .Data {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            padding-top: 0.5rem;
+        }
+
+        .dataArea {
+            display: flex;
+            flex-direction: row;
+            gap: 0.2rem;
+
+            margin-right: 2rem;
+        }
+
+        .dataValue {
+            color: #85868f;
+            font-size: 12px;
+        }
+
+        .Nav {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            flex-grow: 1;
+
+            padding-top: 1.5rem;
+        }
+
+        .navItem {
+            font-size: 12px;
+            font-weight: 600;
+            color: #85868f;
+        }
+
+        .navItemActive {
+            font-size: 12px;
+            font-weight: 600;
+            color: #8000ff;
+            box-shadow: inset 0 -3px 0 0px #8000ff;
+
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+
+            padding-bottom: 1rem;
+            margin-bottom: -1rem;
+        }
+
+        .contentTop {
+            background-color: #eeeeee;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            gap: 2rem;
+
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 24rem;
+
+            margin-left: 4.3rem;
+        }
+
+        .content {
+            background-color: #eeeeee;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            gap: 2rem;
+
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 2rem;
+
+            margin-left: 4.3rem;
+            margin-top: -24rem;
+        }
+
+        .participantsData {
+            display: flex;
+            flex-direction: column;
+
+            background-color: #fff;
+            padding: 2rem;
+            padding-bottom: 5rem;
+
+            width: 100%;
+
+            box-shadow: 0px 0px 5px #00000025;
+        }
+
+        .resumeTitle {
+            font-size: 14px;
+            font-weight: 700;
+            color: #a8a9af;
+        }
+
+        .ticketTitle {
+            font-size: 14px;
+            font-weight: 700;
+            color: #50525f;
+
+            margin-top: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .inputTitle {
+            font-size: 16px;
+            font-weight: 700;
+            color: #50525f;
+
+            margin-top: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .flowDesc {
+            font-size: 14px;
+            font-weight: 400;
+            color: #50525f;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1.5rem;
+            margin-left: 1.5rem;
+            gap: 0.7rem;
+        }
+        .textRadio {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 2.5rem;
+            gap: 1rem;
+
+            width: 100%;
+        }
+
+        .inputContainer {
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+            gap: 2rem;
+        }
+
+        .inputField {
+            padding: 0.7rem 1.5rem;
+            background-color: #fff;
+            border: 1px solid #dfe0df;
+
+            border-radius: 0;
+
+            width: 80%;
+        }
+
+        .contentInputs {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+        }
+
+        .leftInputs {
+            width: 45%;
+            border-right: 1px solid #dfe0df;
+            padding-right: 6rem;
+        }
+
+        .rightInputs {
+            width: 48%;
+
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+        }
+
+        .dataContainer {
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+            gap: 2rem;
+        }
+
+        .dataField {
+            padding: 0.7rem 1.5rem;
+            background-color: #fff;
+            border: 1px dashed #dfe0df;
+
+            border-radius: 0;
+
+            width: 80%;
+        }
+
+        .barField {
+            padding-top: 0.7rem;
+            background-color: #fff;
+            border: none;
+
+            border-radius: 0;
+
+            width: 80%;
+        }
+
+        .barContainer {
+            display: flex;
+            flex-direction: column;
+
+            padding: 0.7rem 1.5rem;
+            background-color: #fff;
+            border: 1px dashed #dfe0df;
+            width: 80%;
+
+            border-radius: 0;
+        }
+
+        .printTitle {
+            color: #50525f;
+            font-size: 17px;
+
+            background-color: #eaeaec;
+            padding: 1rem 2rem;
+
+            margin-top: 3rem;
+        }
+
+        .createButton {
+            color: #8000ff;
+            font-size: 14px;
+            font-weight: 600;
+
+            background-color: #fff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            align-self: center;
+            margin-top: 3.5rem;
+            margin-left: 28%;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+    }
+}

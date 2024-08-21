@@ -1,0 +1,162 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+
+        h1 {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        button {
+            padding: 0.5rem;
+            border-radius: 100vw;
+
+            background-color: transparent;
+            transition: filter 0.2s;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &:focus-within {
+                filter: brightness(0.8);
+            }
+
+            svg {
+                height: 1.5rem;
+                width: 1.5rem;
+                fill: #e6e6e6;
+            }
+        }
+    }
+
+    .scannerContainer {
+        height: 100vh;
+        width: 100vw;
+
+        video {
+            display: block;
+            height: 100%;
+            width: 100%;
+
+            object-fit: cover;
+        }
+    }
+
+    .scanResult {
+        --padding: 1.5rem;
+        --input-height: 2.5rem;
+        --closed-height: calc(var(--input-height) + 2 * var(--padding) + 1px);
+        --open-height: 32vh;
+        --swipe-delta: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        height: 100%;
+        padding: var(--padding);
+        max-height: var(--closed-height);
+        background-color: var(--modal-background-color);
+        border-radius: var(--radius-3) var(--radius-3) 0 0;
+        // data-swipe-delta is used to calculate the height of the container
+        // when the user swipes up or down
+
+        max-height: clamp(
+            var(--closed-height),
+            calc(var(--closed-height) + var(--swipe-delta)),
+            var(--open-height)
+        );
+
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 4px;
+
+        transition: max-height 0.2s;
+        &[data-open='false'] {
+            section {
+                display: none;
+            }
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            div:last-child:not(:first-child) {
+                text-align: right;
+            }
+
+            span {
+                color: var(--primary-text-color-500);
+                font-size: 0.825rem;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+
+            p {
+                color: var(--primary-text-color-500);
+                font-size: 1rem;
+                font-weight: 700;
+                text-wrap: balance;
+            }
+        }
+
+        &[data-open='true'] {
+            max-height: var(--open-height);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: calc(var(--padding) / 2 - 2px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: 75px;
+            border-radius: var(--radius-round);
+            height: 4px;
+            background-color: var(--secondary-background-color-550);
+        }
+
+        .searchContainer {
+            display: flex;
+            border-radius: var(--radius-round);
+            background-color: var(--secondary-background-color-500);
+            overflow: hidden;
+            position: relative;
+
+            input {
+                background-color: transparent;
+                backdrop-filter: none;
+            }
+
+            button {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 0.75rem;
+                font-size: 0.75rem;
+                width: fit-content;
+                border-radius: var(--radius-round);
+            }
+        }
+    }
+}

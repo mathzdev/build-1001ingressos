@@ -1,0 +1,111 @@
+.ticketContainer {
+    --padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 9 / 13;
+    max-width: 425px;
+    background-color: var(--accent-background-color);
+    font-family: var(--font-poppins, sans-serif);
+    color: var(--accent-text-color-500);
+
+    padding: var(--padding);
+    border-radius: 10px;
+
+    header {
+        display: grid;
+        place-content: center;
+        width: 100%;
+        min-height: 2.4rem;
+
+        h1 {
+            text-align: center;
+            font-size: 1.125rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+
+    .divider {
+        --circle-size: 40px;
+        --circle-shift: calc(-20px - var(--circle-size) / 2);
+        position: relative;
+        width: 100%;
+        height: var(--circle-size);
+        background-color: transparent;
+        background-image: url('/images/detach-dot.png');
+        background-repeat: repeat-x;
+        background-position: center;
+        display: block;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 50%;
+            width: var(--circle-size);
+            aspect-ratio: 1 / 1;
+            transform: translateY(-50%);
+            background-color: var(--circle-ticket);
+            border-radius: 1000vw;
+        }
+
+        &::before {
+            left: var(--circle-shift);
+        }
+        &::after {
+            right: var(--circle-shift);
+        }
+    }
+
+    .imageContainer {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        max-width: 80%;
+        margin: 0 auto;
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .infoGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+
+        .infoItem {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            &:nth-child(2n) {
+                align-items: flex-end;
+                span,
+                p {
+                    text-align: right;
+                }
+            }
+
+            span {
+                color: var(--accent-text-color-500);
+                font-size: 0.625rem;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+
+            p {
+                color: var(--accent-text-color-500);
+                font-size: 0.875rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.container {
+    background: var(--primary-background-color-500);
+    height: 100%;
+    width: 100%;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1rem;
+
+        box-shadow: 0 5px #000;
+        border-bottom: 1px solid var(--accent-background-color);
+
+        svg {
+            width: 4rem;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    .bodyContent {
+        background-color: var(--primary-background-color-500);
+        padding: 1rem 2rem;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-text-color-500);
+
+            text-align: left;
+            width: 80%;
+        }
+        p {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}

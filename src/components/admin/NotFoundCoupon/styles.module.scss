@@ -1,0 +1,60 @@
+.bodyContent {
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    padding-block: 100px;
+
+    h2 {
+        color: #4c576c;
+        text-align: center;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        display: inline;
+        min-width: 649px;
+    }
+
+    p {
+        color: #848c9b;
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    button {
+        border-radius: 30px;
+        border: 1px solid #8000ff;
+        background: #8000ff;
+        padding-block: 8px;
+        padding-inline: 12px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 0.85rem;
+        font-style: normal;
+        font-weight: 600;
+        color: #fff;
+
+        &:hover {
+            background: none;
+            color: #8000ff;
+        }
+    }
+}
+
+.headerPart {
+    background: #fff;
+    padding-left: 30px;
+    padding-top: 18px;
+    padding-bottom: 8px;
+    h3 {
+        color: #a8a9af;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.625rem;
+        text-transform: uppercase;
+    }
+}

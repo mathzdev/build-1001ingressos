@@ -1,0 +1,168 @@
+.container {
+    background: var(--primary-background-color-500);
+    padding-inline: 20px;
+    padding-top: 44px;
+    padding-bottom: 100px;
+}
+
+.content {
+    @media only screen and (min-width: 768px) {
+        max-width: 1440px;
+        margin-inline: auto;
+        padding-inline: 190px;
+    }
+}
+
+.checkoutHeader {
+    &[data-active-step='fill_info'] {
+        .circle:nth-child(1) {
+            background-color: transparent;
+            border: 2px solid var(--pink-500);
+        }
+    }
+    &[data-active-step='payment_method'] {
+        .circle:nth-child(1) {
+            background-color: var(--pink-500);
+
+            svg {
+                display: block;
+            }
+        }
+        .line:nth-child(2) {
+            background-color: var(--pink-500);
+        }
+        .circle:nth-child(3) {
+            background-color: transparent;
+            border: 2px solid var(--pink-500);
+        }
+    }
+    &[data-active-step='processing_payment'] {
+        .circle {
+            background-color: var(--pink-500);
+
+            svg {
+                display: block;
+            }
+        }
+        .line {
+            background-color: var(--pink-500);
+        }
+        .circle:nth-child(5) {
+            background-color: transparent;
+            border: 2px solid var(--pink-500);
+            svg {
+                display: none;
+            }
+        }
+    }
+    &[data-active-step='payment_approved'] {
+        .circle {
+            background-color: var(--pink-500);
+
+            svg {
+                display: block;
+            }
+        }
+        .line {
+            background-color: var(--pink-500);
+        }
+    }
+
+    .row1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        h6 {
+            color: var(--primary-text-color-500);
+            font-family: var(--font-poppins, sans-serif);
+            margin-inline: auto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        img {
+            flex-shrink: 0;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            svg {
+                stroke: var(--accent-text-color-500);
+
+                path {
+                    stroke: var(--accent-background-color);
+                }
+            }
+        }
+    }
+
+    .steps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 42px;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--primary-text-color-500);
+        border: none;
+        position: relative;
+
+        svg {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 16px;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    .completed {
+        background-color: var(--pink-500);
+        position: relative;
+
+        svg {
+            display: block;
+        }
+    }
+
+    .line {
+        height: 1px;
+        flex-grow: 1;
+        background-color: var(--primary-text-color-500);
+    }
+
+    .checkIcon {
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        object-fit: cover;
+    }
+}
+
+.stepsContainer {
+    .stepContent {
+        display: none;
+
+        &[data-is-active='true'] {
+            display: block;
+        }
+
+        & > button {
+            margin-top: 44px;
+        }
+    }
+}

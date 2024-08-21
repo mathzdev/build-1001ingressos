@@ -1,0 +1,140 @@
+.container {
+    background-color: #fff;
+    height: 100%;
+}
+
+.qr {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    z-index: 9999; /* Certifique-se de que o z-index seja maior do que os outros elementos, se houver */
+}
+
+.headContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    box-shadow: 0 5px #000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.Title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+.TitleActive {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+
+    box-shadow: inset 0 -3px 0 0px #8000ff;
+    padding-bottom: 1.5rem;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.TitleInactive {
+    font-size: 12px;
+    font-weight: 600;
+    color: #b8b8b8;
+    padding-bottom: 1.5rem;
+    width: 100%;
+
+    text-align: center;
+}
+
+.topHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.bottomHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    text-align: center;
+}
+
+.bodyContent {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding-top: 2rem;
+
+    background-color: #fff;
+
+    flex-grow: 1;
+    min-height: 87vh;
+
+    gap: 1.5rem;
+}
+
+.bodyTitle {
+    font-size: 16px;
+    color: #b5b5b5;
+    font-weight: 600;
+}
+
+.eventContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.downEvent {
+    padding: 1rem;
+    background-color: #eaeaec;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.titleEvent {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.descEvent {
+    color: #6d6d6d;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    margin-top: 0.5rem;
+}
+
+.button {
+    color: #8000ff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}

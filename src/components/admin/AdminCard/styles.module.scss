@@ -1,0 +1,19 @@
+.adminCard {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    padding: 2rem;
+    padding-bottom: 5rem;
+
+    width: 100%;
+
+    box-shadow: 0px 0px 5px #00000025;
+
+    h3 {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: #a8a9af;
+        text-transform: uppercase;
+    }
+}

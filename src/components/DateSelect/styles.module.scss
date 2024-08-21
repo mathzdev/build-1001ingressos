@@ -1,0 +1,69 @@
+.selectContainer {
+    --transition-speed: 300ms;
+    --primary-color: var(--primary-text-color-500);
+    --focus-color: var(--primary-text-color-500);
+    --background-color: var(--secondary-background-color-500);
+    --max-width: 100%;
+
+    max-width: var(--max-width, 480px);
+
+    .inputLabel {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--primary-color);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 0.875rem;
+        font-weight: 600;
+
+        &[data-required='true'] {
+            &::after {
+                content: '*';
+                margin-left: 0.5ch;
+                color: var(--pink-500);
+            }
+        }
+    }
+
+    .selectWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .selectElement {
+        width: 100%;
+        padding: 10px 16px;
+        min-width: fit-content;
+        appearance: initial;
+
+        color: var(--primary-color);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 0.875rem;
+        font-weight: 500;
+
+        border-radius: 2px;
+        border: 1px solid var(--background-color);
+        background: var(--background-color);
+        outline: none;
+        transition: var(--transition-speed);
+        backdrop-filter: blur(5px);
+
+        &:focus,
+        &:hover,
+        &:active,
+        &:focus-visible {
+            border-color: var(--focus-color);
+        }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        select,
+        textarea,
+        input {
+            font-size: 0.875rem;
+        }
+    }
+}

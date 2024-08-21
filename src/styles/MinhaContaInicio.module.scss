@@ -1,0 +1,228 @@
+.container {
+    background: var(--primary-background-color-500);
+    height: 100%;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+
+        box-shadow: 0 5px #000;
+        border-bottom: 1px solid var(--accent-background-color);
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-text-color-500);
+        }
+
+        svg {
+            width: 2rem;
+            aspect-ratio: 1 / 1;
+            stroke: var(--primary-text-color-500);
+
+            &.logo {
+                width: 4rem;
+                stroke: unset;
+                fill: var(--accent-background-color);
+            }
+        }
+    }
+
+    .bodyContent {
+        min-height: calc(100dvh - 97px);
+        min-height: calc(100vh - 97px);
+        background-color: var(--primary-background-color-500);
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-text-color-500);
+
+            text-align: left;
+            width: 80%;
+        }
+    }
+}
+
+.topHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    padding-bottom: 1.5rem;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary-background-color-solid);
+
+    padding: 1rem 0rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    svg {
+        fill: var(--primary-text-color-500);
+
+        &[data-stroke='true'] {
+            stroke: var(--primary-text-color-500);
+            fill: transparent;
+        }
+    }
+
+    .navActive {
+        fill: var(--accent-text-color-500);
+
+        &[data-stroke='true'] {
+            stroke: var(--accent-text-color-500);
+            fill: var(--accent-background-color);
+        }
+
+        background-color: var(--accent-background-color);
+        padding: 0.3rem;
+        border-radius: 2rem;
+    }
+}
+
+.buttonsContent {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 1.5rem;
+
+    width: 100%;
+
+    gap: 1rem;
+}
+
+.buttonActive {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    width: 90%;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+    background: var(--pink-500);
+    background: linear-gradient(
+        90deg,
+        var(--pink-500) 0%,
+        var(--purple-500) 100%
+    );
+
+    p {
+        color: var(--primary-text-color-500);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    svg {
+        width: 1rem;
+        aspect-ratio: 1 / 1;
+        fill: var(--primary-text-color-500);
+
+        &[data-stroke='true'] {
+            stroke: var(--primary-text-color-500);
+            fill: none;
+        }
+    }
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    width: 90%;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+    background-color: var(--secondary-background-color-550);
+
+    p {
+        color: var(--primary-text-color-500);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    svg {
+        width: 1rem;
+        aspect-ratio: 1 / 1;
+        fill: var(--primary-text-color-500);
+
+        &[data-stroke='true'] {
+            stroke: var(--primary-text-color-500);
+            fill: none;
+        }
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+
+    gap: 1.5rem;
+
+    p {
+        font-size: 1rem;
+    }
+
+    svg {
+        width: 2rem;
+        aspect-ratio: 1 / 1;
+        fill: var(--primary-text-color-500);
+    }
+}
+
+.dashBoard {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+    border-radius: 15px;
+    background-color: var(--secondary-background-color-550);
+
+    width: 80%;
+
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-text-color-500);
+}

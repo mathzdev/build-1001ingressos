@@ -1,0 +1,247 @@
+.container {
+    background-color: #fff;
+    height: 100%;
+
+    padding-bottom: 12rem;
+}
+
+.headContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    box-shadow: 0 5px #000;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.Title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+}
+
+.TitleActive {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+
+    box-shadow: inset 0 -3px 0 0px #8000ff;
+    padding-bottom: 1.5rem;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.TitleInactive {
+    font-size: 12px;
+    font-weight: 600;
+    color: #b8b8b8;
+    padding-bottom: 1.5rem;
+    width: 100%;
+
+    text-align: center;
+}
+
+.topHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    padding-bottom: 1.5rem;
+}
+
+.bodyContent {
+    min-height: calc(100dvh - 97px);
+    min-height: calc(100vh - 97px);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: #ffffff;
+
+    flex-grow: 1;
+    min-height: 87vh;
+
+    gap: 1.5rem;
+}
+
+.bodyTitle {
+    font-size: 16px;
+    color: #b5b5b5;
+    font-weight: 600;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1rem 0rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-background-color-solid);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navActive {
+    background-color: #e0e0e0;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+
+.buttonsContent {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 1.5rem;
+
+    width: 100%;
+
+    gap: 1rem;
+}
+
+.buttonActive {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    width: 90%;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+    background: rgb(255, 63, 224);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 63, 224, 1) 0%,
+        rgba(119, 0, 175, 1) 100%
+    );
+
+    p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    width: 90%;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+    background-color: #00000015;
+
+    p {
+        color: #000000;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+
+    gap: 1.5rem;
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.dashBoard {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+    border-radius: 15px;
+    background-color: #00000015;
+
+    width: 80%;
+
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.eventContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+
+    margin-top: 5rem;
+}
+
+.downEvent {
+    padding: 1rem;
+    background-color: #eaeaec;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.titleEvent {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.descEvent {
+    color: #6d6d6d;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.itemE {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.order {
+    text-align: left;
+    width: 80%;
+    font-weight: 600;
+
+    font-size: 20px;
+    color: #000;
+
+    margin-top: 1.5rem;
+    margin-bottom: -0.5rem;
+}

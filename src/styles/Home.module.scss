@@ -1,0 +1,152 @@
+.container {
+    background: var(--primary-background-color-500);
+    height: 100%;
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 1rem 1rem;
+
+        box-shadow: 0 5px #000;
+        border-bottom: 1px solid var(--accent-background-color);
+
+        svg {
+            place-self: center;
+            grid-column: 2;
+            width: 4rem;
+            aspect-ratio: 1 / 1;
+            fill: var(--accent-background-color);
+        }
+    }
+
+    .bodyContent {
+        min-height: calc(100dvh - 97px);
+        min-height: calc(100vh - 97px);
+        background-color: var(--primary-background-color-500);
+        padding: 1rem 2rem 6rem;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-text-color-500);
+
+            text-align: left;
+            width: 80%;
+        }
+
+        main {
+            --min-column-width: 16rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(min(var(--min-column-width), 100%), 1fr)
+            );
+            grid-auto-rows: 1fr;
+
+            & > a {
+                place-self: center;
+            }
+
+            .eventCard {
+                display: grid;
+                width: 100%;
+                grid-template-rows: 2fr 0.5fr;
+
+                border-radius: 15px;
+
+                background-color: var(--secondary-background-color-500);
+                border: 1px solid var(--secondary-background-color-500);
+
+                margin-top: 1rem;
+                overflow: hidden;
+
+                cursor: pointer;
+
+                .bannerWrapper {
+                    background-color: var(--secondary-background-color-500);
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 23rem;
+                    aspect-ratio: 9 / 5;
+                    place-self: center;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .downEvent {
+                    cursor: pointer;
+                    padding: 1rem;
+                    background-color: var(--secondary-background-color-500);
+
+                    display: flex;
+                    flex-direction: column;
+
+                    gap: 0.5rem;
+                }
+
+                .titleEvent {
+                    color: var(--primary-text-color-500);
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                .descEvent {
+                    color: var(--primary-text-color-400);
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                .itemE {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary-background-color-solid);
+
+    padding: 1rem 0rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    svg {
+        fill: var(--primary-text-color-500);
+
+        &[data-stroke='true'] {
+            stroke: var(--primary-text-color-500);
+            fill: transparent;
+        }
+    }
+
+    .navActive {
+        fill: var(--accent-text-color-500);
+
+        &[data-stroke='true'] {
+            stroke: var(--accent-text-color-500);
+            fill: var(--accent-background-color);
+        }
+
+        background-color: var(--accent-background-color);
+        padding: 0.3rem;
+        border-radius: 2rem;
+    }
+}

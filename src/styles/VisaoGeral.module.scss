@@ -1,0 +1,551 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .headerArea {
+    }
+
+    .contentArea {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+        .sidebar {
+        }
+
+        .allContent {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .safeArea {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            justify-content: space-between;
+
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 1rem;
+
+            // margin-left: 4.3rem;
+        }
+
+        .Head {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            justify-content: space-between;
+        }
+
+        .leftHead {
+            display: flex;
+            flex-direction: row;
+
+            gap: 1rem;
+
+            align-items: center;
+        }
+
+        .rightHead {
+            display: flex;
+            flex-direction: row;
+
+            gap: 0.6rem;
+        }
+
+        .greenCircle {
+            height: 10px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #494b57;
+        }
+
+        .headButton {
+            color: #8000ff;
+            font-size: 10px;
+            font-weight: 600;
+
+            background-color: #fff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+
+        .detailButton {
+            color: #8000ff;
+            font-size: 10px;
+            font-weight: 600;
+
+            background-color: #fff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            margin-top: 2rem;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            max-width: 12rem;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+
+        .valueButton {
+            color: #8000ff;
+            font-size: 10px;
+            font-weight: 600;
+
+            background-color: #fff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            margin-top: 1rem;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            max-width: 12rem;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+
+        .Data {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            padding-top: 0.5rem;
+        }
+
+        .dataArea {
+            display: flex;
+            flex-direction: row;
+            gap: 0.2rem;
+
+            margin-right: 2rem;
+        }
+
+        .dataValue {
+            color: #85868f;
+            font-size: 16px;
+            display: inline;
+
+            @media only screen and (min-width: 1440px) {
+                width: 500px;
+            }
+        }
+
+        .Nav {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            flex-grow: 1;
+
+            padding-top: 1.5rem;
+        }
+
+        .navItem {
+            font-size: 12px;
+            font-weight: 600;
+            color: #85868f;
+        }
+
+        .navItemActive {
+            font-size: 12px;
+            font-weight: 600;
+            color: #8000ff;
+            border-bottom: 3px solid #8000ff;
+
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+
+            padding-bottom: 1rem;
+            margin-bottom: -1rem;
+        }
+
+        .content {
+            background-color: #eeeeee;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 2rem;
+            padding-bottom: 8rem;
+        }
+
+        .topContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        .totalData {
+            display: flex;
+            flex-direction: column;
+
+            padding-top: 3rem;
+            padding-left: 2rem;
+
+            background-color: #fff;
+            padding-bottom: 5rem;
+
+            width: 97%;
+
+            border-radius: 15px;
+            border-top: 5px solid #50525f;
+
+            box-shadow: 0px 0px 5px #00000025;
+        }
+
+        .resumeTitle {
+            font-size: 16px;
+            font-weight: 700;
+            color: #8000ff;
+        }
+
+        .graphContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .graph {
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .graphTitle {
+            font-size: 14px;
+            color: #50525f;
+        }
+
+        .rightData {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 50%;
+        }
+
+        .flowData {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            border-radius: 10px;
+
+            height: 45%;
+            width: 100%;
+
+            background-color: #fff;
+            padding: 2rem;
+
+            margin-bottom: 2rem;
+            flex-grow: 1;
+
+            box-shadow: 0px 0px 5px #00000025;
+        }
+
+        .flowContent {
+            margin-top: 2.4rem;
+            margin-left: 1rem;
+            margin-right: 9rem;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flowTitle {
+            font-size: 12px;
+            font-weight: 700;
+            color: #50525f;
+        }
+
+        .flowDesc {
+            font-size: 14px;
+            font-weight: 400;
+            color: #50525f;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .valueDesc {
+            font-size: 14px;
+            font-weight: 400;
+            color: #50525f;
+            margin-top: 2rem;
+        }
+
+        .valueLeft,
+        .valueRight {
+            font-size: 40px;
+            font-weight: 600;
+            color: #a8a9af;
+        }
+
+        .valueRight {
+            color: #8000ff;
+        }
+
+        .textRadio {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1.5rem;
+            gap: 1rem;
+
+            width: 100%;
+        }
+
+        .valuesContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 5rem;
+        }
+    }
+}
+
+.rowPaymentTotal {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.rightPrice {
+    color: #000;
+}
+
+.resumeData {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    border-radius: 8px;
+    background-color: #fff;
+    padding-bottom: 2rem;
+    width: 50%;
+    box-shadow: 0px 0px 5px #00000025;
+
+    p,
+    span {
+        color: #000;
+        font-size: 16px;
+    }
+}
+
+.circle {
+    display: flex;
+    gap: 10px;
+
+    p {
+        color: #31b9ae;
+    }
+}
+
+.rowStatus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columnVisaoGeral {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 21px;
+}
+
+.blockStatus {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    p {
+        color: #50525f;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    span {
+        color: #85868f;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+.rowStatusPrevia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rightSideFinanceiro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    border-radius: 8px;
+    background-color: #fff;
+    padding-bottom: 1rem;
+    width: 45.6%;
+    margin-right: 2rem;
+    box-shadow: 0px 0px 5px #00000025;
+    height: auto;
+    p,
+    span {
+        color: #000;
+    }
+
+    .topInfo {
+        p {
+            color: #8000ff;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.625rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.rowFinanceiro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.columnFinanceiro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 18px;
+}
+
+.columnFinanceiroLeftSide,
+.columnFinanceiroRightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    p {
+        color: #50525f;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+
+    span {
+        color: #2ac8bc;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5625rem; /* 125% */
+    }
+
+    .pendentes {
+        color: #fdbd39;
+    }
+
+    .normalSpan {
+        color: #a8a9af;
+    }
+}
+
+.columnFinanceiroRightSide {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.graphData {
+    background: #fff;
+    margin-right: 2.5rem;
+    padding: 1rem;
+}
+
+.customTooltip {
+    background: #8000ff;
+    border-radius: 4px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.rightSideRowStatus {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    span {
+        text-align: right;
+        margin-left: auto;
+        color: #a8a9af;
+        font-size: 1.1rem;
+        color: #2ac8bc;
+    }
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .dot {
+        display: block;
+        width: 10px;
+        aspect-ratio: 1 / 1;
+        background-color: #ff3549;
+        border-radius: var(--radius-round);
+
+        &[data-active='true'] {
+            background-color: #2cc8bd;
+        }
+    }
+}
+
+.onlineClass {
+    color: #2cc8bd !important;
+}
+
+.encerradoClass {
+    color: #ff3549 !important;
+}

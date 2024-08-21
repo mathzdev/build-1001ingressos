@@ -1,0 +1,551 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .headerArea {
+    }
+
+    .contentArea {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+        .sidebar {
+        }
+
+        .allContent {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .safeArea {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            justify-content: space-between;
+
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        .Head {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            justify-content: space-between;
+        }
+
+        .leftHead {
+            display: flex;
+            flex-direction: row;
+
+            gap: 1rem;
+
+            align-items: center;
+        }
+
+        .rightHead {
+            display: flex;
+            flex-direction: row;
+
+            gap: 0.6rem;
+        }
+
+        .greenCircle {
+            height: 10px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #494b57;
+        }
+
+        .headButton {
+            color: #8000ff;
+            font-size: 10px;
+            font-weight: 600;
+
+            background-color: #fff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+
+        .Data {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            padding-top: 0.5rem;
+        }
+
+        .dataArea {
+            display: flex;
+            flex-direction: row;
+            gap: 0.2rem;
+
+            margin-right: 2rem;
+        }
+
+        .dataValue {
+            color: #85868f;
+            font-size: 12px;
+        }
+
+        .Nav {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            flex-grow: 1;
+
+            padding-top: 1.5rem;
+        }
+
+        .navItem {
+            font-size: 12px;
+            font-weight: 600;
+            color: #85868f;
+        }
+
+        .navItemActive {
+            font-size: 12px;
+            font-weight: 600;
+            color: #8000ff;
+            box-shadow: inset 0 -3px 0 0px #8000ff;
+
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+
+            padding-bottom: 1rem;
+            margin-bottom: -1rem;
+        }
+
+        .content {
+            background-color: #eeeeee;
+
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            gap: 2rem;
+
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 24rem;
+        }
+
+        .participantsData {
+            display: flex;
+            flex-direction: column;
+
+            background-color: #775f89;
+            padding: 2rem;
+            padding-bottom: 5rem;
+
+            width: 100%;
+
+            border-radius: 25px;
+
+            box-shadow: 0px 0px 5px #00000025;
+        }
+
+        .eventData {
+            display: flex;
+            flex-direction: column;
+
+            background-color: #ffffff;
+            padding: 2rem;
+            padding-bottom: 5rem;
+
+            width: 100%;
+
+            box-shadow: 0px 0px 5px #00000025;
+        }
+
+        .resumeTitle {
+            font-size: 16px;
+            font-weight: 700;
+            color: #a8a9af;
+        }
+
+        .flowTitle {
+            font-size: 12px;
+            font-weight: 700;
+            color: #50525f;
+        }
+
+        .flowDesc {
+            font-size: 12px;
+            font-weight: 400;
+            color: #50525f;
+
+            margin-top: 1.5rem;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .right {
+            display: flex;
+
+            gap: 0.5rem;
+        }
+
+        .messageContent {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 5rem;
+        }
+
+        .ticket {
+            width: 4rem;
+        }
+
+        .ticketTitle {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+
+            margin-top: 1.5rem;
+        }
+
+        .ticketDesc {
+            font-size: 16px;
+            font-weight: 400;
+            color: #dde0e4;
+
+            text-align: center;
+            max-width: 20%;
+
+            margin-top: 1rem;
+
+            span {
+                color: #8000ff;
+            }
+        }
+
+        .ticketButton {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+
+            background-color: #8000ff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+
+            margin-top: 2rem;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+
+        .clearButton {
+            color: #8000ff;
+            font-size: 14px;
+            font-weight: 600;
+
+            background-color: #ffffff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+
+            margin-top: 2rem;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+
+        .searchContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2.5rem;
+
+            gap: 2rem;
+        }
+
+        .search {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            padding: 0.7rem 1.5rem;
+            border: 1px solid #c2c2c2;
+            flex-grow: 1;
+            font-size: 14px;
+            // max-width: 100%;
+            max-width: 500px;
+
+            img {
+                flex-shrink: 0;
+                cursor: pointer;
+            }
+        }
+
+        .searchInput {
+            font-size: 14px;
+            font-weight: 400;
+            color: #50525f;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            flex-grow: 1;
+            max-width: 500px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            gap: 1rem;
+        }
+
+        .headTable {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0.7rem 1.5rem;
+            border: 1px solid #dfe0df;
+            flex-grow: 1;
+
+            img {
+                flex-shrink: 0;
+            }
+        }
+
+        .Table {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0.7rem 1.5rem;
+            border: 1px solid #dfe0df;
+            flex-grow: 1;
+
+            justify-content: space-around;
+
+            margin-top: -1rem;
+
+            img {
+                flex-shrink: 0;
+            }
+        }
+
+        .tableTitle {
+            font-size: 14px;
+            font-weight: 700;
+            color: #50525f;
+        }
+
+        .tableItem {
+            font-size: 14px;
+            font-weight: 500;
+            color: #50525f;
+        }
+
+        .headContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .selectTitle {
+            font-size: 16px;
+            font-weight: 600;
+            color: #50525f;
+        }
+
+        .selectField {
+            background-color: #fff;
+            border-radius: 0;
+            border: 1px solid #c8c8c8;
+
+            padding: 0.7rem 1.5rem;
+
+            font-size: 14px;
+            font-weight: 400;
+
+            color: #50525f;
+
+            width: 100%;
+        }
+
+        .edit {
+            cursor: pointer;
+        }
+    }
+}
+
+.tableContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+        minmax(auto, 1fr)
+        minmax(auto, 1.5fr)
+        minmax(auto, 1.5fr)
+        minmax(auto, 1fr)
+        minmax(auto, 1fr)
+        minmax(auto, 1fr)
+        minmax(auto, 1fr);
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid #dfe0df;
+    margin-top: 2rem;
+
+    .tableFullWidth {
+        grid-column: 1/-1;
+        place-self: center;
+        border-right: none !important;
+    }
+
+    .tableHeader,
+    .tableRow {
+        display: contents;
+        cursor: pointer;
+    }
+    .tableHeader {
+        p {
+            background-color: #8000ff;
+            color: white;
+            display: grid;
+            align-items: center;
+            border-top: none !important;
+
+            b {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    p:not(:nth-child(5)) {
+        border-right: 1px solid #dfe0df;
+    }
+    p {
+        padding: 0.7rem 1.5rem;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #50525f;
+        border-top: 1px solid #dfe0df;
+    }
+
+    .progressData {
+        border-left: 1px solid #dfe0df;
+    }
+}
+
+.buttonVerEvento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #dfe0df;
+
+    button {
+        --radius-round: 20px;
+        width: 150px;
+        color: #8000ff;
+        font-size: 14px;
+        font-weight: 600;
+        padding-block: 5px;
+        margin-inline: auto;
+        cursor: pointer;
+        background-color: #fff;
+        border-radius: 20px;
+        border: 1px solid #8000ff;
+        transition: all 0.2s;
+        text-transform: uppercase;
+        animation: none;
+        background-image: none;
+        box-shadow: none;
+
+        &:hover {
+            background-color: #8000ff;
+            color: #fff;
+        }
+    }
+}
+
+.progress {
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    position: relative;
+    margin: 15px 0;
+    height: 30px;
+    width: 110px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.progressDone {
+    background: linear-gradient(to left, #8000ff, #8000ff);
+    color: #50525f;
+    display: flex;
+    align-items: center;
+    border-radius: var(--radius-round);
+    justify-content: flex-start;
+    height: 100%;
+    width: 0;
+    opacity: 0;
+    transition: 1s ease 0.3s;
+    text {
+        padding-left: 1rem;
+        color: #000;
+    }
+}
+
+.progressTotal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    color: #000;
+    font-size: 0.875rem;
+}

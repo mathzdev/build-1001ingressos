@@ -1,0 +1,28 @@
+.qrReaderContainer {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    video {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+    }
+
+    .scan-region-highlight {
+        border-radius: 1em;
+        box-shadow: 0 0 0 1e3vh rgba(0 0 0 / 0.3);
+    }
+
+    .scan-region-highlight-svg {
+        display: none;
+    }
+
+    .code-outline-highlight polygon {
+        stroke-dasharray: 0;
+        stroke: mediumspringgreen;
+        fill: hsl(160 100% 50% / 0.2);
+    }
+}

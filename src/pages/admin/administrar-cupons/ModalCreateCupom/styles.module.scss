@@ -1,0 +1,151 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.modalContent {
+    background: #fff;
+    padding-inline: 30px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    min-width: 600px;
+    border-radius: 5px;
+
+    .topPart {
+        h4 {
+            color: #a8a9af;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.625rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .inputBlock {
+        padding-top: 57px;
+        display: flex;
+        flex-direction: column;
+        p {
+            color: #50525f;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.625rem;
+        }
+        text {
+            color: #a8a9af;
+            font-size: 0.75rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.38438rem;
+            margin-left: auto;
+        }
+        input {
+            height: 40px;
+            background: #fff;
+            font-size: 16px;
+            width: 100%;
+            border: 1px solid #dfe0df;
+            border-radius: 3px;
+            padding-left: 8px;
+            color: #50525f;
+            margin-left: 7px;
+            margin-top: 5px;
+            &:focus-within {
+                outline: none;
+                border-color: #8000ff;
+            }
+        }
+    }
+
+    .discountWrap {
+        p {
+            color: #50525f;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.625rem;
+        }
+    }
+
+    .rowDiscount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .blockRadioButton {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            input {
+                border-radius: 3px;
+                border: 1px solid #dfe0df;
+                background: #fff;
+                padding-left: 8px;
+                padding-block: 11px;
+                color: #50525f;
+
+                &:focus-within {
+                    outline: none;
+                    border-color: #8000ff;
+                }
+
+                &:disabled {
+                    background: #eaeaec;
+                }
+            }
+        }
+    }
+
+    .bottomButtons {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        gap: 18px;
+
+        .Cancelar {
+            border-radius: 30px;
+            color: #8000ff;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: none;
+            min-width: 111.8px;
+            padding-block: 7px;
+
+            &:hover {
+                background: #f6f6f6;
+            }
+        }
+
+        .Criar {
+            border-radius: 30px;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: none;
+            min-width: 131.8px;
+            background: #8000ff;
+            padding-block: 7px;
+            &:hover {
+                background: #6d00db;
+            }
+        }
+    }
+}

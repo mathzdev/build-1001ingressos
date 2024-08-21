@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .buttonsContainer {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contentCard__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.5rem;
+        gap: 1rem;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column-reverse;
+            gap: 0.5rem;
+
+            .buttonsContainer {
+                width: 100%;
+            }
+            .headButton {
+                width: 100%;
+            }
+            .search {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .searchBar {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0.7rem 1.5rem;
+        border: 1px solid #dfe0df;
+        flex-grow: 1;
+
+        width: 100%;
+        max-width: 450px;
+
+        img {
+            flex-shrink: 0;
+        }
+
+        input {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: #a8a9af;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            flex-grow: 1;
+            min-width: 0;
+            margin: 0;
+            padding: 0;
+            cursor: text;
+        }
+    }
+
+    .tableContainer {
+        display: grid;
+        width: 100%;
+        grid-template-columns:
+            minmax(300px, 1fr) 230px minmax(300px, 1fr) 230px
+            minmax(160px, max-content);
+        border-radius: 8px;
+        overflow-x: scroll;
+        border: 1px solid #dfe0df;
+        margin-top: 1rem;
+
+        .tableFullWidth {
+            grid-column: 1/-1;
+            place-self: center;
+            border-right: none !important;
+        }
+
+        .tableHeader,
+        .tableRow {
+            display: contents;
+        }
+        .tableHeader {
+            p {
+                background-color: #8000ff;
+                color: white;
+                display: grid;
+                align-items: center;
+                border-top: none !important;
+
+                b {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        p:not(:nth-child(5)) {
+            border-right: 1px solid #dfe0df;
+        }
+        p {
+            padding: 0.7rem 1.5rem;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #50525f;
+            border-top: 1px solid #dfe0df;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+@import 'open-props/style';
+@import 'open-props/normalize';
+@import 'open-props/supports.min.css';
+@import 'open-props/sizes';
+@import 'open-props/media';
+@import 'open-props/animations';
+@import 'open-props/easings';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --max-width: 1100px;
+    --border-radius: 12px;
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+        'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+        'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+    --body-background-color: #ffffff;
+
+    --primary-background-color-500: #ffffff;
+    --primary-background-color-600: rgba(238, 238, 238, 0.8);
+
+    --secondary-background-color-500: rgba(0, 0, 0, 0.1);
+    --secondary-background-color-550: rgba(0, 0, 0, 0.15);
+
+    --secondary-background-color-solid: #d9d9d9;
+
+    --accent-background-color: #000;
+
+    --primary-text-color-400: rgba(0, 0, 0, 0.65);
+    --primary-text-color-500: #000;
+
+    --accent-text-color-500: #fff;
+
+    --circle-ticket: #fff;
+
+    --pink-500: #ff3fe0;
+    --purple-500: #860cbe;
+    --accent-purple: #402187;
+    --black-900: #050506;
+
+    --modal-background-color: #fff;
+
+    @media (prefers-color-scheme: dark) {
+        --body-background-color: #000;
+
+        --primary-background-color-500: radial-gradient(
+            59.63% 69.48% at 72.35% 66.85%,
+            rgba(163, 27, 225, 0.17) 0%,
+            rgba(163, 27, 225, 0) 100%
+        );
+        --primary-background-color-600: rgba(0, 0, 0, 0.8);
+
+        --secondary-background-color-500: rgba(255, 255, 255, 0.1);
+        --secondary-background-color-550: rgba(255, 255, 255, 0.15);
+
+        --secondary-background-color-solid: #2b272b;
+
+        --accent-background-color: #fff;
+
+        --primary-text-color-400: rgb(255, 255, 255, 0.65);
+        --primary-text-color-500: rgb(255, 255, 255);
+
+        --accent-text-color-500: #262626;
+        --accent-purple: #c1afdb;
+
+        --circle-ticket: #000;
+
+        --modal-background-color: #050506;
+
+        input[type='radio'] {
+            filter: invert(1);
+            accent-color: #95ff00;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    color: var(--primary-text-color-500);
+    background: var(--body-background-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+// @media (prefers-color-scheme: dark) {
+//     html {
+//         color-scheme: dark;
+//     }
+// }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    -webkit-transition:
+        color 9999s ease-out,
+        background-color 9999s ease-out;
+    background-color: rgba(255, 0, 0, 0) !important;
+    color: currentcolor !important;
+}
+
+input[type='text'] {
+    font-size: inherit;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select,
+    textarea,
+    input {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,56 @@
+@keyframes textura {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.container {
+    padding-inline: 20px;
+    background: var(--primary-background-color-500);
+    padding-inline: 20px;
+    padding-top: 44px;
+    padding-bottom: 100px;
+}
+
+.bannerCheckout {
+    width: 100%;
+    max-width: 425px;
+
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.headerEvento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 17px;
+
+    p {
+        color: var(--primary-text-color-500);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-inline: auto;
+    }
+
+    svg {
+        stroke: var(--accent-text-color-500);
+
+        path {
+            stroke: var(--accent-background-color);
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}

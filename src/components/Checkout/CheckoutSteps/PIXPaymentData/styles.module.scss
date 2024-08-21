@@ -1,0 +1,219 @@
+.middleContent {
+    min-height: calc(100vh - 161px);
+    min-height: calc(100dvh - 161px);
+}
+
+.resumoBlockFirstBlock {
+    @media only screen and (min-width: 768px) {
+        height: 431px;
+    }
+}
+
+.resumoBlock,
+.resumoBlockFirstBlock {
+    border-radius: 21px;
+    border: 1px solid var(--secondary-background-color-500);
+    background: var(--secondary-background-color-500);
+    backdrop-filter: blur(5px);
+    padding-inline: 30px;
+    padding-block: 30px;
+
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: var(--primary-text-color-500);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 12px;
+
+        @media only screen and (min-width: 768px) {
+            font-family: var(--font-poppins, sans-serif);
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            color: var(--primary-text-color-500);
+        }
+    }
+
+    .totalTickets {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        text {
+            color: var(--primary-text-color-500);
+            font-family: var(--font-poppins, sans-serif);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+
+    .pixQRCode {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 21px;
+        border: 1px solid var(--secondary-background-color-500);
+        background: var(--secondary-background-color-500);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        max-width: 250px;
+        aspect-ratio: 1/1;
+        margin-inline: auto;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.accordionPayment {
+    h2 {
+        text-align: center;
+        color: var(--simple-text-color);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-inline: auto;
+        margin-bottom: 36px;
+    }
+}
+
+.rowAccordionPayment {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        color: var(--primary-text-color-400);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    p {
+        color: var(--primary-text-color-500);
+        text-align: right;
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 11px;
+    }
+}
+
+.totalRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 11px;
+
+    p {
+        margin: 0px;
+        color: var(--primary-text-color-500);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+.checkedApproved img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 10px rgba(190, 226, 212, 0.49);
+    width: 100px;
+    height: 100px;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.rowPayment {
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 38px;
+    }
+}
+
+.comoPagarDesktop {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+        padding: 31px;
+        width: 100%;
+        gap: 30px;
+        height: 431px;
+        margin-bottom: 20px;
+
+        h4 {
+            font-family: var(--font-poppins, sans-serif);
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            color: var(--primary-text-color-500);
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-family: var(--font-poppins, sans-serif);
+            font-style: normal;
+            font-weight: 400;
+            color: var(--primary-text-color-500);
+
+            @media only screen and (max-width: 1440px) {
+                font-size: 18px;
+            }
+
+            @media only screen and (max-width: 1280px) {
+                font-size: 16px;
+            }
+        }
+        .rowIconInformation {
+            display: flex;
+            gap: 12px;
+
+            svg {
+                min-width: 20px;
+                height: 20px;
+
+                fill: var(--accent-text-color-500);
+
+                path {
+                    fill: var(--accent-background-color);
+                }
+            }
+        }
+    }
+}

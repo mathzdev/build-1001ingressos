@@ -1,0 +1,390 @@
+.checkoutStep {
+    & > button {
+        margin-top: 44px;
+    }
+}
+
+.pagamentoRow {
+    color: var(--primary-text-color-500);
+    font-family: var(--font-poppins, sans-serif);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.pagamentoWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 16px;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+.paymentOption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 13px;
+    padding-block: 7px;
+    border-radius: 2px;
+    border: 1px solid var(--secondary-background-color-500);
+    background: var(--secondary-background-color-500);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+
+    span {
+        color: var(--primary-text-color-500);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @media only screen and (min-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    svg {
+        fill: var(--accent-text-color-500);
+
+        path {
+            fill: var(--accent-background-color);
+        }
+    }
+
+    &.selected {
+        box-shadow: 0px 0px 0px 1px var(--pink-500);
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+    }
+}
+
+.informationBlock {
+    h3 {
+        text-align: center;
+        color: var(--primary-text-color-500);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 47px;
+        margin-bottom: 25px;
+        max-width: 100%;
+
+        @media only screen and (min-width: 768px) {
+            text-align: left;
+        }
+    }
+
+    p {
+        color: var(--primary-text-color-500);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 255px;
+        @media only screen and (min-width: 768px) {
+            font-size: 18px;
+            width: 100%;
+        }
+    }
+}
+
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 14px;
+    margin-bottom: 30px;
+
+    .rowInput {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    .dateInput {
+        width: 100%;
+    }
+    .dateClearButton {
+        &::after {
+            background-color: transparent;
+            background-image: linear-gradient(
+                45deg,
+                var(--pink-500),
+                var(--purple-500)
+            );
+        }
+    }
+
+    input {
+        padding-inline: 20px;
+        border-radius: 2px;
+        border: 1px solid var(--secondary-background-color-500);
+        background: var(--secondary-background-color-500);
+        backdrop-filter: blur(5px);
+        padding-block: 10px;
+        font-family: var(--font-poppins, sans-serif);
+
+        @media (prefers-color-scheme: dark) {
+            color-scheme: dark;
+        }
+
+        color: var(--primary-text-color-500);
+        &::placeholder {
+            color: var(--primary-text-color-500);
+            opacity: 1;
+        }
+
+        &:not([type='checkbox']):focus {
+            outline: 1px solid var(--pink-500);
+        }
+
+        [type='date']::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+        [type='date'] {
+            width: 100%;
+        }
+    }
+}
+
+.rowCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--primary-text-color-500);
+    font-family: var(--font-poppins, sans-serif);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.resumoBlock {
+    border-radius: 21px;
+    border: 1px solid var(--secondary-background-color-500);
+    background: var(--secondary-background-color-500);
+    backdrop-filter: blur(5px);
+    padding-inline: 30px;
+    padding-block: 30px;
+
+    p {
+        color: var(--primary-text-color-500);
+        font-family: var(--font-poppins, sans-serif);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+
+    .totalTickets {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        text {
+            color: var(--primary-text-color-500);
+            font-family: var(--font-poppins, sans-serif);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0px;
+            padding: 0px;
+
+            @media only screen and (min-width: 768px) {
+                font-size: 18px;
+            }
+        }
+
+        .totalRow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 11px;
+
+            p {
+                margin: 0px;
+                color: var(--primary-text-color-500);
+                font-family: var(--font-poppins, sans-serif);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+                @media only screen and (min-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.pontilhado {
+    margin-top: 16px;
+    height: 2px;
+    background-image: radial-gradient(
+        var(--primary-text-color-500) 20%,
+        rgba(0, 0, 0, 0) 20%
+    );
+    background-position: center;
+    background-size: 11px 1px;
+    background-repeat: repeat-x;
+}
+
+.blockInputWithIcon {
+    --transition-speed: 300ms;
+    --primary-color: var(--primary-text-color-500);
+    --focus-color: var(--primary-text-color-500);
+    --background-color: var(--secondary-background-color-500);
+    --max-width: 100%;
+    width: 100%;
+    display: flex;
+
+    width: 100%;
+    padding-left: 15px;
+    appearance: initial;
+
+    color: var(--primary-color);
+    font-family: var(--font-poppins, sans-serif);
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    border-radius: 2px;
+    border: none;
+    background: var(--background-color);
+    outline: none;
+    transition: var(--transition-speed);
+    backdrop-filter: blur(5px);
+
+    &:focus,
+    &:hover,
+    &:active,
+    &:focus-visible {
+        border-color: var(--focus-color);
+    }
+
+    &:focus-within {
+        box-shadow: 0px 0px 0px 1px var(--pink-500);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        color: var(--primary-text-color-400);
+    }
+
+    svg {
+        fill: var(--accent-text-color-500);
+
+        path {
+            fill: var(--accent-background-color);
+        }
+    }
+}
+
+.inputWithIcon {
+    background: none !important;
+    backdrop-filter: none !important;
+    border: none !important;
+
+    &:focus,
+    &:hover,
+    &:active,
+    &:focus-visible {
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: transparent !important;
+        border: none !important;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 18px !important;
+    }
+}
+
+.customLabel {
+    @media only screen and (min-width: 768px) {
+        font-size: 18px;
+        margin-block: 5px;
+    }
+}
+
+.rowResumoBlock {
+    @media only screen and (min-width: 768px) {
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.nameEvent {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 51px;
+
+    .rowLocation {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .locationBlock,
+    .locationBlockIcon {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+
+        @media only screen and (max-width: 768px) {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .dateText {
+            color: #696969;
+        }
+    }
+
+    .locationBlockIcon {
+        svg {
+            stroke: var(--accent-background-color);
+            fill: var(--accent-background-color);
+
+            path {
+                stroke: var(--accent-background-color);
+            }
+        }
+    }
+
+    h3 {
+        color: var(--primary-text-color-500);
+        font-size: 0.875rem;
+        display: inline;
+        @media only screen and (min-width: 768px) {
+            display: inline;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,257 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .headerArea {
+    }
+
+    .contentArea {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+        .sidebar {
+        }
+
+        .allContent {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .safeArea {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            justify-content: space-between;
+
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 1rem;
+
+            margin-left: 4.3rem;
+        }
+
+        .Head {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            justify-content: space-between;
+        }
+
+        .leftHead {
+            display: flex;
+            flex-direction: row;
+
+            gap: 1rem;
+
+            align-items: center;
+        }
+
+        .rightHead {
+            display: flex;
+            flex-direction: row;
+
+            gap: 0.6rem;
+        }
+
+        .greenCircle {
+            height: 10px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #494b57;
+        }
+
+        .headButton {
+            color: #8000ff;
+            font-size: 10px;
+            font-weight: 600;
+
+            background-color: #fff;
+            border-radius: 30px;
+
+            border: 1px solid #8000ff;
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &:hover {
+                background-color: #8000ff;
+                color: #fff;
+            }
+        }
+
+        .Data {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            padding-top: 0.5rem;
+        }
+
+        .dataArea {
+            display: flex;
+            flex-direction: row;
+            gap: 0.2rem;
+
+            margin-right: 2rem;
+        }
+
+        .dataValue {
+            color: #85868f;
+            font-size: 12px;
+        }
+
+        .Nav {
+            background-color: #fff;
+
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            flex-grow: 1;
+
+            padding-top: 1.5rem;
+        }
+
+        .navItem {
+            font-size: 12px;
+            font-weight: 600;
+            color: #85868f;
+        }
+
+        .navItemActive {
+            font-size: 12px;
+            font-weight: 600;
+            color: #8000ff;
+            box-shadow: inset 0 -3px 0 0px #8000ff;
+
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
+
+            padding-bottom: 1rem;
+            margin-bottom: -1rem;
+        }
+
+        .content {
+            background-color: #eeeeee;
+
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+
+            gap: 2rem;
+
+            padding-top: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 24rem;
+
+            margin-left: 4.3rem;
+        }
+
+        .participantsData {
+            display: flex;
+            flex-direction: column;
+
+            background-color: #fff;
+            padding: 2rem;
+            padding-bottom: 5rem;
+
+            width: 100%;
+
+            box-shadow: 0px 0px 5px #00000025;
+        }
+
+        .resumeTitle {
+            font-size: 14px;
+            font-weight: 700;
+            color: #a8a9af;
+        }
+
+        .flowTitle {
+            font-size: 12px;
+            font-weight: 700;
+            color: #50525f;
+        }
+
+        .flowDesc {
+            font-size: 12px;
+            font-weight: 400;
+            color: #50525f;
+
+            margin-top: 1.5rem;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .right {
+            display: flex;
+
+            gap: 0.5rem;
+        }
+
+        .headArea {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .messageContent {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+
+            margin-top: 2.5rem;
+        }
+
+        .messageText {
+            margin-top: 1.5rem;
+            font-size: 14px;
+
+            max-width: 22rem;
+
+            span {
+                color: #8000ff;
+            }
+        }
+
+        .rightMessage {
+            padding: 1.5rem;
+            border: 1px solid #d1cece;
+
+            width: 60%;
+        }
+
+        .rightMessage textarea {
+            flex-grow: 1;
+            width: 100%;
+            height: 80%;
+            margin-top: 1rem;
+            background-color: #fff;
+            outline: none;
+        }
+
+        .buttonContent {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            margin-top: 2rem;
+            align-self: flex-end;
+        }
+    }
+}

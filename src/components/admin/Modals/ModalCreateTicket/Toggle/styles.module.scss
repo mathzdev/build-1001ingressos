@@ -1,0 +1,87 @@
+.reactSwitchCheckbox {
+    height: 0;
+    width: 0;
+    position: absolute;
+    visibility: hidden;
+
+    &:checked + .reactSwitchButton {
+        left: calc(100% - 2px);
+        transform: translateY(-50%) translateX(-100%);
+        background: #8000ff;
+    }
+
+    &:active + .reactSwitchButton {
+        width: 60px;
+    }
+}
+
+.reactSwitch {
+    cursor: pointer;
+    width: 120px;
+    height: 25px;
+    background: #fff;
+    border: 1px solid #50525f;
+    position: relative;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+
+    &:has(.reactSwitchCheckbox:checked) {
+        border-color: #8000ff;
+    }
+
+    .reactSwitchButton {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+        width: 55px;
+        height: 20px;
+        transition: 0.2s;
+        background: #dfe0df;
+        border-radius: 4px;
+        box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+    }
+}
+
+.reactSwitchLabels {
+    display: relative;
+    z-index: 0;
+    height: 100%;
+
+    .left,
+    .right {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.left {
+    left: 0;
+    color: #8000ff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.right {
+    right: 0;
+    color: #50525f;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 10px;
+    text-transform: uppercase;
+}
