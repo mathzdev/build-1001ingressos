@@ -109,7 +109,7 @@ export const getServerSideProps = (async (context) => {
                 payment: paymentData,
                 eventName: event.eventData.name,
                 eventDate: event.eventData.startDateTimestamp,
-                ordanizerName: event.organizerData.name,
+                organizerName: event.organizerData.name,
             },
         };
     } catch (error) {
@@ -163,7 +163,7 @@ export default function Carrinho({
     payment,
     eventName,
     eventDate,
-    ordanizerName,
+    organizerName,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
     const [activeStep, setActiveStep] = useState<CheckoutStep>(
         payment ? 'processing_payment' : 'fill_info'
@@ -273,7 +273,7 @@ export default function Carrinho({
                         }
                         eventName={eventName}
                         formattedEventDate={formattedEventDate}
-                        ordanizerName={ordanizerName}
+                        organizerName={organizerName}
                     />
 
                     {selectedPaymentMethod === 'PIX' ? (

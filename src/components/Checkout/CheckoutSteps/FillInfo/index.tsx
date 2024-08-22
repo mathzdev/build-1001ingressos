@@ -24,7 +24,7 @@ interface FillInfoProps extends HTMLAttributes<HTMLDivElement> {
     onChangeStep?: (step: CheckoutStep, payload?: any) => void;
     eventName: string;
     formattedEventDate: string;
-    ordanizerName: string;
+    organizerName: string;
 }
 
 const FillInfo = ({
@@ -35,7 +35,7 @@ const FillInfo = ({
     onChangeStep,
     eventName,
     formattedEventDate,
-    ordanizerName,
+    organizerName,
     ...props
 }: FillInfoProps) => {
     const { data: session, update } = useSession();
@@ -147,7 +147,7 @@ const FillInfo = ({
                     </div>
                     <div className={styles.locationBlockIcon}>
                         <LocationIcon />
-                        <p>{ordanizerName}</p>
+                        <p>{organizerName}</p>
                     </div>
                 </div>
             </div>
