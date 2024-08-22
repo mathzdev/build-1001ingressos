@@ -251,7 +251,7 @@ const CardPayment = ({ cartId, onChangeStep, ...props }: CardPaymentProps) => {
             }
 
             toast.error(message, {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
             setIsLoading(false);
             return;
@@ -301,7 +301,7 @@ const CardPayment = ({ cartId, onChangeStep, ...props }: CardPaymentProps) => {
             }
         } catch (error) {
             toast.error('CEP inválido!', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
         }
     };

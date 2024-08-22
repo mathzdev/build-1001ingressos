@@ -104,7 +104,7 @@ const CriarEvento: NextPageWithLayout = () => {
 
         if (errorMessage) {
             toast.error(errorMessage, {
-                icon: '🚨',
+                icon: <>🚨</>,
                 theme: getToastTheme(),
             });
             return;

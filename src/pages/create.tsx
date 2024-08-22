@@ -73,7 +73,7 @@ export default function Create() {
 
         if (password !== confirmPassword) {
             toast.error('As senhas não coincidem', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
             setIsLoading(false);
             return;
@@ -89,7 +89,7 @@ export default function Create() {
             });
 
             toast.success('Conta criada com sucesso!', {
-                icon: '🎉',
+                icon: <>🎉</>,
             });
             setIsLoading(false);
 
@@ -99,7 +99,7 @@ export default function Create() {
                 console.log(error.response);
 
                 toast.error(error.response.data.message, {
-                    icon: '🚨',
+                    icon: <>🚨</>,
                 });
                 setIsLoading(false);
                 return;
@@ -107,7 +107,7 @@ export default function Create() {
             toast.error(
                 'Ocorreu um erro ao criar a conta, tente novamente mais tarde!',
                 {
-                    icon: '🚨',
+                    icon: <>🚨</>,
                 }
             );
             console.error('Erro na criação da conta:', error);

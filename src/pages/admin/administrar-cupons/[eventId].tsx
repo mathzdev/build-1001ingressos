@@ -123,13 +123,13 @@ const Ingressos: NextPageWithLayout<
 
             if (!res.ok) {
                 toast.error('Falha ao excluir o cupom!', {
-                    icon: '🚨',
+                    icon: <>🚨</>,
                 });
                 return;
             }
 
             toast.success('Cupom deletado com sucesso!', {
-                icon: '🎉',
+                icon: <>🎉</>,
             });
 
             setFilteredCoupons(
@@ -152,11 +152,11 @@ const Ingressos: NextPageWithLayout<
         try {
             await navigator.clipboard.writeText(link);
             toast.success('Link copiado para a área de transferência!', {
-                icon: '🔗',
+                icon: <>🔗</>,
             });
         } catch (error) {
             toast.error('Erro ao copiar o link!', {
-                icon: '❌',
+                icon: <>❌</>,
             });
         }
     };

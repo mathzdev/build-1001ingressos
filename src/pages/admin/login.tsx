@@ -26,7 +26,7 @@ export default function Login() {
 
             if (response?.error) {
                 toast.error('Email ou senha incorretos', {
-                    icon: '🚨',
+                    icon: <>🚨</>,
                 });
             } else {
                 router.push('/admin/');

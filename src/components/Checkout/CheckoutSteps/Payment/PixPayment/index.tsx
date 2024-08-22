@@ -123,7 +123,7 @@ const PixPayment = ({ cartId, onChangeStep, ...props }: PixPaymentProps) => {
             }
 
             toast.error(message, {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
             setIsLoading(false);
             return;
@@ -155,7 +155,7 @@ const PixPayment = ({ cartId, onChangeStep, ...props }: PixPaymentProps) => {
             }
         } catch (error) {
             toast.error('CEP inválido!', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
         }
     };

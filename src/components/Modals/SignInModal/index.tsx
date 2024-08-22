@@ -53,7 +53,7 @@ export default function SignInModal({ onSuccess }: SignInModalProps) {
             window.SignInModal.close('close');
         } catch (error) {
             toast.error('Email ou senha incorretos', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
         }
     };
@@ -73,7 +73,7 @@ export default function SignInModal({ onSuccess }: SignInModalProps) {
             window.SignInModal.close('close');
         } catch (error) {
             toast.error('Email ou senha incorretos', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
         }
     };
@@ -93,7 +93,7 @@ export default function SignInModal({ onSuccess }: SignInModalProps) {
             window.SignInModal.close('close');
         } catch (error) {
             toast.error('Email ou senha incorretos', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
         }
     };

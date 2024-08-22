@@ -1,6 +1,8 @@
 import { IconProps } from '.';
 
-export default function Logo1001Ingressos({ ...props }: IconProps) {
+export default function Logo1001Ingressos({
+    ...props
+}: IconProps & React.SVGProps<SVGSVGElement>) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

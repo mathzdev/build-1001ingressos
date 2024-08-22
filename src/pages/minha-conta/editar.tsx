@@ -66,7 +66,7 @@ export default function MinhaContaEditar() {
             setCpf(data.cpf ?? '');
 
             toast.success('Dados do usuário atualizados com sucesso!', {
-                icon: '👍',
+                icon: <>👍</>,
             });
 
             await update({
@@ -82,7 +82,7 @@ export default function MinhaContaEditar() {
         } catch (error) {
             console.error(error);
             toast.error('Erro ao atualizar informações do usuário!', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
             return;
         }

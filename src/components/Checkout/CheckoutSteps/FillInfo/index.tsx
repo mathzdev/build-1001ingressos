@@ -79,7 +79,7 @@ const FillInfo = ({
     const handleContinue = async () => {
         if (!selectedPaymentMethod) {
             toast.error('Selecione um método de pagamento!', {
-                icon: '🚨',
+                icon: <>🚨</>,
                 theme: getToastTheme(),
             });
             return;
@@ -87,7 +87,7 @@ const FillInfo = ({
 
         if (!fullName || !phoneNumber) {
             toast.error('Preencha todos os campos obrigatórios!', {
-                icon: '🚨',
+                icon: <>🚨</>,
                 theme: getToastTheme(),
             });
             return;
@@ -124,7 +124,7 @@ const FillInfo = ({
             } catch (error) {
                 console.error(error);
                 toast.error('Erro ao atualizar informações do usuário!', {
-                    icon: '🚨',
+                    icon: <>🚨</>,
                     theme: getToastTheme(),
                 });
                 return;

@@ -4,7 +4,7 @@ export default function Document() {
     return (
         <Html lang="en">
             <Head />
-            <title>1001Ingressos</title>
+            <title>1001 Ingressos</title>
             <link rel="icon" href="/fav.png" />
             <body>
                 <Main />

@@ -78,7 +78,7 @@ const ModalEditPromoCode = ({
 
         if (!transFormedCondigo) {
             toast.error('O cupom precisa de um nome!', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
 
             return;
@@ -103,7 +103,7 @@ const ModalEditPromoCode = ({
 
             if (response.ok) {
                 toast.success('Cupom Editado com sucesso!', {
-                    icon: '🎉',
+                    icon: <>🎉</>,
                 });
                 const editedCoupon = {
                     couponCode: transFormedCondigo,
@@ -120,18 +120,18 @@ const ModalEditPromoCode = ({
                 toast.error(
                     'Um cupom com este código já existe para este evento.',
                     {
-                        icon: '🚨',
+                        icon: <>🚨</>,
                     }
                 );
             } else {
                 toast.error(data.error || 'Erro ao criar o cupom', {
-                    icon: '🚨',
+                    icon: <>🚨</>,
                 });
             }
         } catch (error) {
             console.error('Erro ao enviar o formulário:', error);
             toast.error('Erro ao enviar o formulário', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
         }
     };

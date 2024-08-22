@@ -63,7 +63,7 @@ export default function BaseModal({
             >
                 <form method="dialog" onSubmit={onSubmit}>
                     <header>
-                        <Logo1001Ingressos />
+                        <Logo1001Ingressos width={40} height={40} />
                         <button
                             type="button"
                             disabled={disableClosing}

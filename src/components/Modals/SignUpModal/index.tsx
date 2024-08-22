@@ -35,7 +35,7 @@ export default function SignUpModal({ onSuccess }: SignUpModalProps) {
 
         if (password !== confirmPassword) {
             toast.error('As senhas não coincidem', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
             setIsLoading(false);
             return;
@@ -51,7 +51,7 @@ export default function SignUpModal({ onSuccess }: SignUpModalProps) {
             });
 
             toast.success('Conta criada com sucesso!', {
-                icon: '🎉',
+                icon: <>🎉</>,
             });
             setIsLoading(false);
 
@@ -67,7 +67,7 @@ export default function SignUpModal({ onSuccess }: SignUpModalProps) {
         } catch (error: any) {
             if (error.response && error.response.data) {
                 toast.error(error.response.data.message, {
-                    icon: '🚨',
+                    icon: <>🚨</>,
                 });
                 setIsLoading(false);
                 return;
@@ -75,7 +75,7 @@ export default function SignUpModal({ onSuccess }: SignUpModalProps) {
             toast.error(
                 'Ocorreu um erro ao criar a conta, tente novamente mais tarde!',
                 {
-                    icon: '🚨',
+                    icon: <>🚨</>,
                 }
             );
             console.error('Erro na criação da conta:', error);
@@ -116,7 +116,7 @@ export default function SignUpModal({ onSuccess }: SignUpModalProps) {
             window.SignInModal.close('close');
         } catch (error) {
             toast.error('Email ou senha incorretos', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
         }
     };
@@ -136,7 +136,7 @@ export default function SignUpModal({ onSuccess }: SignUpModalProps) {
             window.SignInModal.close('close');
         } catch (error) {
             toast.error('Email ou senha incorretos', {
-                icon: '🚨',
+                icon: <>🚨</>,
             });
         }
     };
