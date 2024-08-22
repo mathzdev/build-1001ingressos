@@ -150,7 +150,7 @@ export default function Evento({
     useEffect(() => {
         if (couponData && couponData.isActive) {
             toast.success('Cupom de desconto aplicado!', {
-                icon: <>🎉</>,
+                icon: '🎉',
                 autoClose: 2500,
                 theme: getToastTheme(),
             });
@@ -165,7 +165,7 @@ export default function Evento({
 
         if (Object.values(selectedTickets.tickets).length <= 0) {
             toast.error('Selecione pelo menos um ingresso!', {
-                icon: <>🚨</>,
+                icon: '🚨',
                 autoClose: 2500,
                 theme: getToastTheme(),
             });
@@ -185,7 +185,7 @@ export default function Evento({
 
         if (status !== 200) {
             toast.error('Erro ao criar carrinho!', {
-                icon: <>🚨</>,
+                icon: '🚨',
                 autoClose: 2500,
                 theme: getToastTheme(),
             });
@@ -206,7 +206,7 @@ export default function Evento({
 
         if (Object.values(selectedTickets.tickets).length <= 0) {
             toast.error('Selecione pelo menos um ingresso!', {
-                icon: <>🚨</>,
+                icon: '🚨',
                 autoClose: 2500,
                 theme: getToastTheme(),
             });
@@ -228,7 +228,7 @@ export default function Evento({
 
         if (status !== 200) {
             toast.error('Erro ao criar carrinho!', {
-                icon: <>🚨</>,
+                icon: '🚨',
                 autoClose: 2500,
                 theme: getToastTheme(),
             });
@@ -271,7 +271,7 @@ export default function Evento({
 
             if (status !== 200 || !data.isActive) {
                 toast.error('O cupom não existe!', {
-                    icon: <>🚨</>,
+                    icon: '🚨',
                     autoClose: 2500,
                     theme: getToastTheme(),
                 });
@@ -283,13 +283,13 @@ export default function Evento({
                 couponId: data.couponCode,
             }));
             toast.success('Cupom de desconto aplicado!', {
-                icon: <>🎉</>,
+                icon: '🎉',
                 autoClose: 2500,
                 theme: getToastTheme(),
             });
         } catch (error) {
             toast.error('O cupom não existe!', {
-                icon: <>🚨</>,
+                icon: '🚨',
                 autoClose: 2500,
                 theme: getToastTheme(),
             });

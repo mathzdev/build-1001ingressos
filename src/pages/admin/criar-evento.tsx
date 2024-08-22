@@ -100,7 +100,7 @@ const CriarEvento: NextPageWithLayout = () => {
         const formData = new FormData(e.currentTarget);
 
         const errorMessage = validateEventFields();
-        const imageUrl = await uploadImage(formData);
+        // const imageUrl = await uploadImage(formData);
 
         if (errorMessage) {
             toast.error(errorMessage, {
