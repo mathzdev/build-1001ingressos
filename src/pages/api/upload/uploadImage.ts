@@ -21,18 +21,14 @@ export const config = {
 };
 
 const uploadImageToStorage = async (fileName: string, fileBuffer: Buffer) => {
-    try {
-        const destinationWithHash = `images/${fileName}.webp`;
-        const storageRef = ref(storage, destinationWithHash);
+    const destinationWithHash = `images/${fileName}.webp`;
+    const storageRef = ref(storage, destinationWithHash);
 
-        await uploadBytes(storageRef, fileBuffer);
+    await uploadBytes(storageRef, fileBuffer);
 
-        const downloadURL = await getDownloadURL(storageRef);
+    const downloadURL = await getDownloadURL(storageRef);
 
-        return downloadURL;
-    } catch (err) {
-        throw new Error(err);
-    }
+    return downloadURL;
 };
 
 interface NextApiRequestWithMulter extends NextApiRequest {
