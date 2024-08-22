@@ -258,7 +258,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                     width: 300,
                     height: 300,
                     data,
-                    image: 'https://firebasestorage.googleapis.com/v0/b/ticket-king-6be25.appspot.com/o/ticket_king.png?alt=media&token=42636a31-b042-45ca-82f4-959c87aef4a5',
+                    image: 'https://static.1001ingressos.com.br/logo.png',
                     margin: 0,
                     qrOptions: {
                         typeNumber: 0,

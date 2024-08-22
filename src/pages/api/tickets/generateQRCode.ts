@@ -16,7 +16,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         });
     }
 
-    const pathReference = ref(storage, 'ticket_king.png');
+    const pathReference = ref(storage, '1001ingressos-qr.png');
     const imageUrl = await getDownloadURL(pathReference);
 
     try {
