@@ -5,7 +5,7 @@ export default function Aprovado() {
         <section className={styles.container}>
             <div className={styles.topPart}>
                 <div className={styles.row1}>
-                    <img src="/arrowLeftTicketKing.svg" />
+                    <img src="/arrowLeft1001Ingressos.svg" />
                     <h6>Adicionar cartão</h6>
                 </div>
                 <div className={styles.steps}>

@@ -103,7 +103,7 @@ export default function SignInModal({ onSuccess }: SignInModalProps) {
     return (
         <BaseModal
             id={'SignInModal'}
-            title={'Bem vindo à Ticket King'}
+            title={'Bem vindo à 1001 Ingressos'}
             subTitle="Faça seu login para continuar"
             onSubmit={handleCredentialsAuthentication}
             disableClosing={status !== 'authenticated' && isEventRoute}

@@ -9777,9 +9777,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ticketking@workspace:.":
+"1001Ingressos@workspace:.":
   version: 0.0.0-use.local
-  resolution: "ticketking@workspace:."
+  resolution: "1001Ingressos@workspace:."
   dependencies:
     "@auth/firebase-adapter": "npm:^1.0.4"
     "@img/sharp-linux-x64": "npm:^0.33.0"

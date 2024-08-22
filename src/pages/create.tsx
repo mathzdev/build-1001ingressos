@@ -125,7 +125,7 @@ export default function Create() {
     return (
         <section className={styles.container}>
             <div className={styles.titleblock}>
-                <h1>Bem vindo a Ticket King</h1>
+                <h1>Bem vindo a 1001 Ingressos</h1>
                 <p>Para começar preencha o formulário de cadastro</p>
             </div>
             <div className={styles.formBlock}>

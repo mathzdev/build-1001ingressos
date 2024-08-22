@@ -1,5 +1,5 @@
 import Button from '@/components/Button';
-import LogoTicketKing from '@/icons/LogoTicketKing';
+import Logo1001Ingressos from '@/icons/Logo1001Ingressos';
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import useDialog from '../useDialog';
 import styles from './styles.module.scss';
@@ -63,7 +63,7 @@ export default function BaseModal({
             >
                 <form method="dialog" onSubmit={onSubmit}>
                     <header>
-                        <LogoTicketKing />
+                        <Logo1001Ingressos />
                         <button
                             type="button"
                             disabled={disableClosing}

@@ -214,7 +214,7 @@ const Scan = () => {
 
     const handleScan = useCallback(
         async (result: QrScanner.ScanResult) => {
-            if (result.data.startsWith('ticketking://ticket.validate/')) {
+            if (result.data.startsWith('1001Ingressos://ticket.validate/')) {
                 const ticketId = result.data.split('/').pop();
                 if (!ticketId) {
                     return;

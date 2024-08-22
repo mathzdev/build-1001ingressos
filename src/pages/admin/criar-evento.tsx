@@ -759,7 +759,7 @@ const CriarEvento: NextPageWithLayout = () => {
                                                 Configurações
                                             </p>
                                             <div className={styles.midle}>
-                                                <input type="radio" />
+                                                <input type="checkbox" />
                                                 <p
                                                     className={
                                                         styles.selectTitle

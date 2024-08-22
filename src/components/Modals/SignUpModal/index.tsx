@@ -146,7 +146,7 @@ export default function SignUpModal({ onSuccess }: SignUpModalProps) {
     return (
         <BaseModal
             id={'SignUpModal'}
-            title={'Bem vindo à Ticket King'}
+            title={'Bem vindo à 1001 Ingressos'}
             subTitle="Insira seus dados para continuar"
             submitLabel="Criar conta"
             onSubmit={handleFormSubmit}

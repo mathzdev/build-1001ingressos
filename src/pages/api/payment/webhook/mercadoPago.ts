@@ -179,7 +179,7 @@ export default async function handler(
                                     ticketBatch: batchData.name,
                                     ticketCode: ticketSnapshot.id,
                                     eventDateRaw: eventData.startDate.toDate(),
-                                    ticketUrl: `https://ticketking.com.br/ticket/${ticketSnapshot.id}`,
+                                    ticketUrl: `https://1001ingressos.com.br/ticket/${ticketSnapshot.id}`,
                                 });
                             }
                         } catch (error) {

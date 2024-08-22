@@ -206,7 +206,7 @@ const VisaoGeral: NextPageWithLayout<
                             alt=""
                             className={styles.greenCircle}
                         />
-                        <p className={styles.title}>Ticket King</p>
+                        <p className={styles.title}>1001 Ingressos</p>
                         <img src="/Link.svg" alt="" />
                     </div>
 

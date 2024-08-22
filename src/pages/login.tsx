@@ -37,7 +37,7 @@ export default function Home() {
     return (
         <main className={styles.container}>
             <div className={styles.titleblock}>
-                <h1>Bem vindo a Ticket King</h1>
+                <h1>Bem vindo a 1001 Ingressos</h1>
                 <p>Faça seu login para continuar</p>
             </div>
             <div className={styles.formBlock}>
@@ -78,6 +78,7 @@ export default function Home() {
                         icon={<img src="/googleProvider.svg" />}
                         onClick={handleGoogleAuthentication}
                         variant="glass"
+                        type="button"
                     />
                     {/* <Button
                         label="Apple"

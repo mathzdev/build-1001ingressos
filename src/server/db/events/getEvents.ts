@@ -15,7 +15,7 @@ export async function getEvents() {
     const eventsSnapshot = await getDocs(eventsQuery);
 
     if (eventsSnapshot.empty) {
-        throw new Error('No events not found');
+        // throw new Error('No events not found');
     }
 
     const events = await Promise.all(

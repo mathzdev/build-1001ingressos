@@ -87,7 +87,7 @@ export async function createFreeTickets(
             dateAcquired: new Date(),
         });
 
-        const data = `ticketking://ticket.validate/${ticketRef.id}`;
+        const data = `1001Ingressos://ticket.validate/${ticketRef.id}`;
 
         const options: Options = {
             width: 300,

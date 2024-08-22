@@ -424,7 +424,7 @@ const VisaoTransacoes: NextPageWithLayout<
                                                     </Link>
                                                 </div>
                                                 <span>
-                                                    www.ticketking.com.br
+                                                    www.1001ingressos.com.br
                                                 </span>
                                             </div>
                                         </div>

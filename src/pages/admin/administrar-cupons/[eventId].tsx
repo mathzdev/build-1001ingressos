@@ -148,7 +148,7 @@ const Ingressos: NextPageWithLayout<
 
     const handleCopyLink = async (couponCode: string) => {
         const formattedCouponCode = couponCode.toUpperCase();
-        const link = `https://www.ticketking.com.br/evento/${event.slug}?c=${formattedCouponCode}`;
+        const link = `https://www.1001ingressos.com.br/evento/${event.slug}?c=${formattedCouponCode}`;
         try {
             await navigator.clipboard.writeText(link);
             toast.success('Link copiado para a área de transferência!', {

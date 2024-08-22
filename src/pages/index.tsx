@@ -1,4 +1,4 @@
-import LogoTicketKing from '@/icons/LogoTicketKing';
+import Logo1001Ingressos from '@/icons/Logo1001Ingressos';
 import NavHomeIcon from '@/icons/NavHomeIcon';
 import NavPerfilIcon from '@/icons/NavPerfilIcon';
 import NavSearchIcon from '@/icons/NavSearchIcon';
@@ -64,7 +64,7 @@ export default function Favoritos({
         <>
             <div className={styles.container}>
                 <header>
-                    <LogoTicketKing />
+                    <Logo1001Ingressos />
                 </header>
 
                 <div className={styles.bodyContent}>

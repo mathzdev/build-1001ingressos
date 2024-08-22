@@ -1,5 +1,5 @@
 import Button from '@/components/Button';
-import LogoTicketKing from '@/icons/LogoTicketKing';
+import Logo1001Ingressos from '@/icons/Logo1001Ingressos';
 import styles from '@/styles/Login.module.scss';
 import { signIn } from 'next-auth/react';
 import Link from 'next/link';
@@ -41,7 +41,7 @@ export default function Login() {
     return (
         <section className={styles.container}>
             <div className={styles.headerPart}>
-                <LogoTicketKing className={styles.logo} />
+                <Logo1001Ingressos className={styles.logo} />
                 <h1>Acesse abaixo o painel para produtores</h1>
             </div>
             <div className={styles.content}>

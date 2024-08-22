@@ -32,7 +32,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
         const { ticketId } = parseResponse.data;
 
-        const data = `ticketking://ticket.validate/${ticketId}`;
+        const data = `1001Ingressos://ticket.validate/${ticketId}`;
 
         const options: Options = {
             width: 300,

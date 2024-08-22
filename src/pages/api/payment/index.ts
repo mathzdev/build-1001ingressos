@@ -252,7 +252,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                 });
                 batchesNameByTicket[ticketRef.id] = batch.name;
 
-                const data = `ticketking://ticket.validate/${ticketRef.id}`;
+                const data = `1001Ingressos://ticket.validate/${ticketRef.id}`;
 
                 const options: Options = {
                     width: 300,
@@ -408,7 +408,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                         ticketBatch: batchesNameByTicket[ticketDoc.id],
                         ticketCode: ticketDoc.id,
                         eventDateRaw: eventData.startDate.toDate(),
-                        ticketUrl: `https://ticketking.com.br/ticket/${ticketDoc.id}`,
+                        ticketUrl: `https://1001ingressos.com.br/ticket/${ticketDoc.id}`,
                     });
                 }
             }
@@ -485,7 +485,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                 ticketBatch: batchesNameByTicket[ticketDoc.id],
                 ticketCode: ticketDoc.id,
                 eventDateRaw: eventData.startDate.toDate(),
-                ticketUrl: `https://ticketking.com.br/ticket/${ticketDoc.id}`,
+                ticketUrl: `https://1001ingressos.com.br/ticket/${ticketDoc.id}`,
             });
         }
 

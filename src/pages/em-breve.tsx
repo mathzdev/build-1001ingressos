@@ -1,10 +1,10 @@
-import LogoTicketKing from '@/icons/LogoTicketKing';
+import Logo1001Ingressos from '@/icons/Logo1001Ingressos';
 import styles from '@/styles/Maintenance.module.scss';
 
 export default function Maintenance() {
     return (
         <div className={styles.container}>
-            <LogoTicketKing />
+            <Logo1001Ingressos />
         </div>
     );
 }

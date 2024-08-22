@@ -458,7 +458,7 @@ const VisaoTransacoes: NextPageWithLayout<
 
                             <div className={styles.totalData}>
                                 <p className={styles.resumeTitle}>
-                                    REPASSE DO TICKET KING
+                                    REPASSE DO 1001 Ingressos
                                 </p>
 
                                 <div className={styles.valuesContainer}>

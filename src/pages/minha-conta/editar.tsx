@@ -6,7 +6,7 @@ import BtnEditIcon from '@/icons/BtnEditIcon';
 import BtnHomeIcon from '@/icons/BtnHomeIcon';
 import BtnOrdersIcon from '@/icons/BtnOrdersIcon';
 import BtnOutIcon from '@/icons/BtnOutIcon';
-import LogoTicketKing from '@/icons/LogoTicketKing';
+import Logo1001Ingressos from '@/icons/Logo1001Ingressos';
 import NavHomeIcon from '@/icons/NavHomeIcon';
 import NavPerfilIcon from '@/icons/NavPerfilIcon';
 import NavSearchIcon from '@/icons/NavSearchIcon';
@@ -96,7 +96,7 @@ export default function MinhaContaEditar() {
                         <ArrowIcon />
                     </Link>
                     <h1>Minha Conta</h1>
-                    <LogoTicketKing className={styles.logo} />
+                    <Logo1001Ingressos className={styles.logo} />
                 </header>
 
                 <div className={styles.bodyContent}>

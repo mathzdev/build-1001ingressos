@@ -74,7 +74,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         );
 
         const logoUrl = await convertImageToBase64(
-            'https://firebasestorage.googleapis.com/v0/b/ticket-king-6be25.appspot.com/o/logo_ticketking.png?alt=media&token=2b2eef9c-e3f9-45ee-930f-c84778177aff'
+            'https://firebasestorage.googleapis.com/v0/b/ticket-king-6be25.appspot.com/o/logo_1001Ingressos.png?alt=media&token=2b2eef9c-e3f9-45ee-930f-c84778177aff'
         );
 
         const eventBannerUrl = await convertImageToBase64(
