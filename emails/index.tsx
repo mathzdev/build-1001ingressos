@@ -38,7 +38,7 @@ export default function Email({
     eventTime,
     ticketUrl,
 }: EmailProps) {
-    const firstName = name.split(' ')[0];
+    const firstName = name?.split(' ')[0];
     return (
         <Html>
             <Head />
@@ -47,7 +47,7 @@ export default function Email({
                 <Container style={container}>
                     <Section style={header}>
                         <Img
-                            src="https://firebasestorage.googleapis.com/v0/b/ticket-king-6be25.appspot.com/o/logo_1001Ingressos.png?alt=media&token=2b2eef9c-e3f9-45ee-930f-c84778177aff"
+                            src="https://static.1001ingressos.com.br/logo.png"
                             width="146"
                             alt="1001 Ingressos"
                             style={logo}

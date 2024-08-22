@@ -1,7 +1,7 @@
 import CheckinTKIcon from '@/icons/CheckinTKicon';
 import FinanceiroTKIcon from '@/icons/FinanceiroTKIcon';
 import IngressosTKIcon from '@/icons/IngressosTKIcon';
-import LogoTKIcon from '@/icons/LogoTKIcon';
+import Logo1001Icon from '@/icons/Logo1001Icon';
 import LogoutIcon from '@/icons/LogoutIcon';
 import PainelTKIcon from '@/icons/PainelTKIcon';
 import ParticipantesTKIcon from '@/icons/ParticipantesTKIcon';
@@ -13,11 +13,9 @@ import styles from './styles.module.scss';
 
 const buttons = [
     {
-        icon: <LogoTKIcon />,
-
+        icon: <Logo1001Icon />,
         isLogo: true,
     },
-
     {
         icon: <PainelTKIcon />,
         label: 'Meus Eventos',
